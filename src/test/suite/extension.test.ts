@@ -12,10 +12,10 @@ suite('Extension Test Suite', () => {
 		const ws = vscode.workspace;
 		const document = ws.openTextDocument('./extension.test.ts');
 		// const document = ws.textDocuments[0];
-		const editor:vscode.TextEditor = vscode.window.activeTextEditor!;
-		console.log(editor.document.uri);
-		console.log(document);
-		assert.equal(-1, 1);
+		// const editor:vscode.TextEditor = vscode.window.activeTextEditor!;
+		// console.log(editor.document.uri);
+		// console.log(document);
+		// assert.equal(-1, 1);
 		// assert.equal(-1, [1, 2, 3].indexOf(0));
 	});
 });

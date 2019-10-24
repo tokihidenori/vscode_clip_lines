@@ -27,36 +27,43 @@
 				"when": "textInputFocus"
 			}
 		],
-        "configuration": {
-            "type": "object",
-            "title": "Clip Lines configuration",
-            "properties": {
-                "clipLines.lineNumberSeparater": {
-                    "type": "string",
-                    "default": "|",
-                    "scope": "window",
-                    "description": "Line number and text separator"
-                },
-                "clipLines.onlyIncludeRelativePath": {
-                    "type": "boolean",
-                    "default": true,
-                    "scope": "window",
-                    "description": "Include only relative paths"
-                },
-                "clipLines.enableMarkDownFormat": {
-                    "type": "boolean",
-                    "default": true,
-                    "scope": "window",
-                    "description": "Make text markdown"
-                },
-                "clipLines.includeFilepathInMarkDownSyntaxHighlight": {
-                    "type": "boolean",
-                    "default": false,
-                    "scope": "window",
-                    "description": "Include filepath to markdown text"
-                }
-            }
-        }
+		"menus": {
+			"editor/context": [{
+				"when": "editorHasSelection",
+				"command": "extension.clipLines",
+				"group": "myGroup@1"
+			}]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Clip Lines configuration",
+			"properties": {
+				"clipLines.lineNumberSeparater": {
+					"type": "string",
+					"default": "|",
+					"scope": "window",
+					"description": "Line number and text separator"
+				},
+				"clipLines.onlyIncludeRelativePath": {
+					"type": "boolean",
+					"default": true,
+					"scope": "window",
+					"description": "Include only relative paths"
+				},
+				"clipLines.enableMarkDownFormat": {
+					"type": "boolean",
+					"default": true,
+					"scope": "window",
+					"description": "Make text markdown"
+				},
+				"clipLines.includeFilepathInMarkDownSyntaxHighlight": {
+					"type": "boolean",
+					"default": false,
+					"scope": "window",
+					"description": "Include filepath to markdown text"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

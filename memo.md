@@ -3,6 +3,7 @@
 [Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
 [contributes.configuration](https://code.visualstudio.com/api/references/contribution-points#contributes.configuration)
 [contributes.keybindings](https://code.visualstudio.com/api/references/contribution-points#contributes.keybindings)
+[contributes.menus](https://code.visualstudio.com/api/references/contribution-points#contributes.menus)
 
 # 手順
 
