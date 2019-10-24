@@ -4,6 +4,7 @@
 [contributes.configuration](https://code.visualstudio.com/api/references/contribution-points#contributes.configuration)
 [contributes.keybindings](https://code.visualstudio.com/api/references/contribution-points#contributes.keybindings)
 [contributes.menus](https://code.visualstudio.com/api/references/contribution-points#contributes.menus)
+[初めてのVSCode Extension公開](https://qiita.com/yutana/items/9e2ac81a4f01f3fb83b8)
 
 # 手順
 
@@ -87,4 +88,28 @@ on how to modify, test and publish your extension.
 For more information, also visit http://code.visualstudio.com and follow us @code.
 ```
 
+# 公開
 
+## vsceコマンドのインストール
+
+```
+npm install -g vsce
+```
+
+## シェル再起動
+
+```
+exec $SHELL -l
+```
+
+## Publisherの作成
+
+```
+vsce create-publisher (Publisher名)
+```
+
+## 公開
+
+```
+vsce publish
+```

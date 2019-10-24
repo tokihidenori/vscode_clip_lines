@@ -3,6 +3,7 @@
 	"displayName": "ClipLines",
 	"description": "Clipping file lines and line numbers",
 	"version": "0.0.1",
+	"publisher": "hidenoritoki",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -82,5 +83,10 @@
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.2.0"
-	}
+	},
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tokihidenori/vscode_clip_lines.git"
+  }
 }
